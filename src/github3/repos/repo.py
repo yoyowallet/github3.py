@@ -782,6 +782,7 @@ class _Repository(models.GitHubCore):
     def create_deployment(
         self,
         ref,
+        task=None,
         required_contexts=None,
         payload="",
         auto_merge=False,
@@ -792,6 +793,9 @@ class _Repository(models.GitHubCore):
 
         :param str ref:
             (required), The ref to deploy. This can be a branch, tag, or sha.
+        :param str task:
+            Specifies a task to execute (e.g., deploy or deploy:migrations).
+            Default: deploy
         :param list required_contexts:
             Optional array of status contexts
             verified against commit status checks. To bypass checking
@@ -819,6 +823,7 @@ class _Repository(models.GitHubCore):
             url = self._build_url("deployments", base_url=self._api)
             data = {
                 "ref": ref,
+                "task": task,
                 "required_contexts": required_contexts,
                 "payload": payload,
                 "auto_merge": auto_merge,

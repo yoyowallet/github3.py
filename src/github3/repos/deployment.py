@@ -37,6 +37,10 @@ class Deployment(GitHubCore):
 
         The unique identifier of this deployment.
 
+    .. attribute:: task
+
+        Used by the deployment system to allow different execution paths.
+
     .. attribute:: payload
 
         The JSON payload string sent as part to trigger this deployment.
@@ -67,6 +71,7 @@ class Deployment(GitHubCore):
         self.description = deployment["description"]
         self.environment = deployment["environment"]
         self.id = deployment["id"]
+        self.task = deployment["task"]
         self.payload = deployment["payload"]
         self.ref = deployment["ref"]
         self.sha = deployment["sha"]
