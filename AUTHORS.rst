@@ -12,6 +12,8 @@ Maintainer(s)
 
 - Matt Chung (@itsmemattchung)
 
+- Thiago D'Ávila (@staticdev)
+
 Requests
 ````````
 
@@ -178,3 +180,27 @@ Contributors
 - James E. Blair (@jeblair)
 
 - Simon Westphahl (@westphahl)
+
+- Steven Nyman (@stevennyman)
+
+- Tigran Tchougourian (@NargiT)
+
+- Samuel Mendes (@smendes)
+
+- Dimitri Merejkowsky (@dmerejkowsky)
+
+- Erico Fusco (@ericofusco)
+
+- Radomir Stevanovic (@randomir)
+
+- Ben Jefferies (@benjefferies)
+
+- Bharat Raghunathan (@Bharat123rox)
+
+- Kevin P. Fleming (@kpfleming)
+
+- Andrew Hayworth (@ahayworth)
+
+- Dmitry Kiselev (@dmitrykiselev27)
+
+- Adeodato Simó (@dato)
